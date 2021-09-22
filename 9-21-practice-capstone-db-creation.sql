@@ -74,8 +74,7 @@ Insert Users
 	Go
 
 Insert Requests
-(Desc
-ription, Justification, DeliveryMode, Total, Userid)
+(Description, Justification, DeliveryMode, Total, Userid)
 VALUES
 ('New Battery', 'lost backup', 'ship', 75.50, (select id from users where Firstname = 'Ansel')),
 ('Pack of film', 'on my last roll', 'ship', 115.75, (select id from users where Firstname = 'Annie')),
@@ -91,3 +90,4 @@ VALUES
 ('APS', 'Adobe Photoshop Pro', 350.99, (select id from Vendors where code = 'APL')),
 ('CAM', 'Standard employee camera kit', 1500.88, (select id from Vendors where code = 'CAN'));
 Go
+select * from Products;
